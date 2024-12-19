@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:context=".ViewAllVehiclesActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/vehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: Car"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/vehicleBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand: Toyota"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/vehicleColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color: Red"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/vehicleSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seats: 4"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/vehicleLicence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licence: ABC123"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/vehiclePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: 10$"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/vehicleLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: 10km"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/vehicleOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner: John Doe"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/vehicleReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Review: 0"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnScheduleTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule Trip"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

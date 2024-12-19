@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostTripActivity">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/include_toolbar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etDateFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date From"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/etDateTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date To"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/etVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehicle" />
+
+            <EditText
+                android:id="@+id/etBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand" />
+
+            <EditText
+                android:id="@+id/etColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Color" />
+
+            <EditText
+                android:id="@+id/etSeats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Seats"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etLicencePlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Licence Plate" />
+
+            <EditText
+                android:id="@+id/etOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Owner" />
+
+            <Button
+                android:id="@+id/btnSubmitTrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Trip" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
